@@ -1,0 +1,27 @@
+html, body {
+  height: 100%; /* Ensure html and body take full height */
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  position: relative; /* Position relative for z-index management */
+}
+.inner{
+  background-color: rgba(166, 186, 204, 0.588);
+}
+.content {
+  position: relative; /* Position content above background */
+  z-index: 1; /* Ensure content is above the background */
+  text-align: center; /* Center text inside content */
+  color: white; /* Change text color if needed for visibility */
+}
